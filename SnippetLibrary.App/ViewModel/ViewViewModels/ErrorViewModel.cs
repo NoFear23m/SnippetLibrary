@@ -53,7 +53,6 @@ namespace SnippetLibrary.App.ViewModel.ViewViewModels
             {
                 if (_Mail == null)
                 {
-                    MessageBox.Show(ex.Message);
                     _Mail = new RelayCommand(x => Process.Start("mailto:florian.programming@gmail.com?subject=SnippetLibrary Error&body=" + _ErrorText));
                 }
                 return _Mail;

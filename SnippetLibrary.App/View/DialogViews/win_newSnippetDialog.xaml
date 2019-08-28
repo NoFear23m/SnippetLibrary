@@ -64,6 +64,8 @@
             <ComboBox Grid.Column="1" Grid.Row="1" DisplayMemberPath="Name"
                       ItemsSource="{Binding AviableLanguages}" SelectedItem="{Binding Language}"></ComboBox>
             <TextBox  Grid.Column="1" Grid.Row="2" Text="{Binding TagString}"/>
+            <TextBox  Grid.Column="1" Grid.Row="3" Text="{Binding CreatedBy}"/>
+
 
             <TextBlock Grid.Column="1" Grid.Row="4" Margin="0" FontWeight="Normal" Text="{Binding Path=CreatedAt, StringFormat={}{0:dd.MM.yyyy}}"></TextBlock>
         </Grid>
