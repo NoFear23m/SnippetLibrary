@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SnippetLibrary.App.ViewModel.ViewViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,10 @@ namespace SnippetLibrary.App.WorkspaceViews
     /// </summary>
     public partial class win_mainWorkspace : Window
     {
-        public win_mainWorkspace()
+        
+        public win_mainWorkspace(OverviewViewModel vm)
         {
+            DataContext = vm;
             InitializeComponent();
         }
     }

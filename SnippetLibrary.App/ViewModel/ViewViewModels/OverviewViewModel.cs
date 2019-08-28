@@ -136,6 +136,8 @@ namespace SnippetLibrary.App.ViewModel.ViewViewModels
             {
                 DataService.Instance.ClearAllData();
                 DataService.Instance.LoadFromFile(new System.IO.FileInfo(FileName));
+                IsFileOpen = true;
+                OpenFileName = FileName;
             }
 
             List<LanguageViewModel> languagesVM = new List<LanguageViewModel>();
@@ -181,8 +183,6 @@ namespace SnippetLibrary.App.ViewModel.ViewViewModels
                 DataService.Instance.Languages = languages;
                 DataService.Instance.SaveToFile(new System.IO.FileInfo(sfd.FileName));
                 Load(sfd.FileName);
-                IsFileOpen = true;                      
-                OpenFileName = sfd.FileName;
             }
 
         }
@@ -198,8 +198,6 @@ namespace SnippetLibrary.App.ViewModel.ViewViewModels
             if (ofd.ShowDialog() == true)
             {
                 Load(ofd.FileName);
-                IsFileOpen = true;
-                OpenFileName = ofd.FileName;
             }
         }
         public void SaveFile()
@@ -220,8 +218,6 @@ namespace SnippetLibrary.App.ViewModel.ViewViewModels
             {
                 DataService.Instance.SaveToFile(new System.IO.FileInfo(sfd.FileName));
                 Load(sfd.FileName);
-                IsFileOpen = true;
-                OpenFileName = sfd.FileName;
             }        
         }
         
