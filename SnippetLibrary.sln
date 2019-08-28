@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetLibrary.App", "SnippetLibrary.App\SnippetLibrary.App.csproj", "{5CD1BD3D-DE1D-467F-A415-F5148FB87040}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetLibrary.ExampleFileCreator", "SnippetLibrary.ExampleFileCreator\SnippetLibrary.ExampleFileCreator.csproj", "{9F83EBBE-4255-4070-AFFA-ACDA12A049FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CD1BD3D-DE1D-467F-A415-F5148FB87040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD1BD3D-DE1D-467F-A415-F5148FB87040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD1BD3D-DE1D-467F-A415-F5148FB87040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD1BD3D-DE1D-467F-A415-F5148FB87040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F83EBBE-4255-4070-AFFA-ACDA12A049FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F83EBBE-4255-4070-AFFA-ACDA12A049FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F83EBBE-4255-4070-AFFA-ACDA12A049FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F83EBBE-4255-4070-AFFA-ACDA12A049FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60566419-EB83-480A-955A-359EA33820D8}
+	EndGlobalSection
+EndGlobal
